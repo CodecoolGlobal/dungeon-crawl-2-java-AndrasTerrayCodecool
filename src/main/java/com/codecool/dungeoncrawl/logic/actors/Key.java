@@ -23,4 +23,16 @@ public class Key {
             colorBlue = 0;
         }
     }
+
+    public void setColorRed(int colorRed) {
+        this.colorRed = colorRed;
+    }
+
+    public void setColorGreen(int colorGreen) {
+        this.colorGreen = colorGreen;
+    }
+
+    public void setColorBlue(int colorBlue) {
+        this.colorBlue = colorBlue;
+    }
 }

@@ -30,9 +30,18 @@ public abstract class Actor implements Drawable {
                 break;
             case "Key":
                 keys.add((Key) o);
+                makeAllMyKeyBlack();
                 break;
             default:
                 throw new IllegalArgumentException("Not key or shield; Cannot pick up");
+        }
+    }
+
+    public void makeAllMyKeyBlack() {
+        for (Key key : keys) {
+            key.setColorRed(0);
+            key.setColorGreen(0);
+            key.setColorBlue(0);
         }
     }
 
